@@ -7,6 +7,7 @@ yum install java-11*
 #Find the java installation 
 find / -name java-11* | head -n 4
 ------------------------------------------------------------------------------------------------
+/**
 cat  << 'EOF' >> ~/.bash_profile
 ###################################
 #.bash_profile
@@ -31,6 +32,8 @@ export PATH
 #Updated by hari
 #########################################
 EOF
+**/
+
 --------------------------------------------------------
 #Java Version check 
 
@@ -145,6 +148,8 @@ eksctl -version
  5. 
 
 ## install the EKS nodes - 
+
+https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html#eksctl-prereqs
 
 # Nodes 
 
