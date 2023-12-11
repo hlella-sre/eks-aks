@@ -6,11 +6,11 @@ yum install java-11*
 
 #Find the java installation 
 find / -name java-11* | head -n 4
-
+------------------------------------------------------------------------------------------------
 cat  << 'EOF' >> ~/.bash_profile
 ###################################
-# .bash_profile
-# Get the aliases and functions
+#.bash_profile
+#Get the aliases and functions
 if [ -f ~/.bashrc ]; then
         . ~/.bashrc
 fi
@@ -23,7 +23,7 @@ export JAVA_HOME
 export M2_HOME=/opt/apache-maven-3.9.6
 export M2=$M2_HOME/bin
 
-# User specific environment and startup programs
+#User specific environment and startup programs
 PATH=$PATH:$HOME/bin:$JAVA_HOME:$M2
 export PATH
 
@@ -31,7 +31,7 @@ export PATH
 #Updated by hari
 #########################################
 EOF
-
+--------------------------------------------------------
 #Java Version check 
 
 java -version
